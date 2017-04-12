@@ -10,9 +10,18 @@ namespace BackBeTrip.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Home Page2";
 
             return View();
         }
+
+        public ActionResult API() 
+        {
+            ViewBag.Title = "API Page2";
+
+            return View();
+        }
+
+
     }
 }

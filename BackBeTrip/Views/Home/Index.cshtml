@@ -1,8 +1,4 @@
-﻿@{
-	ViewBag.Title = "Home Page";
-}
-
-<script src="http://maps.google.com/maps/api/js?sensor=true&key=AIzaSyDfRm2VJqH_rbnfZl0gcxqi8-XZhwIBu5o" type="text/javascript"></script>
+﻿<script src="http://maps.google.com/maps/api/js?sensor=true&key=AIzaSyDfRm2VJqH_rbnfZl0gcxqi8-XZhwIBu5o" type="text/javascript"></script>
 
 <style>
 	.stationInfo {
@@ -32,7 +28,7 @@
 
         // Установка общих параметров отображения карты, как масштаб, центральная точка и тип карты
         var mapOptions = {
-            zoom: 3,
+            zoom: 8,
             center: Moscow,
             mapTypeId: google.maps.MapTypeId.G_NORMAL_MAP
         };
@@ -46,9 +42,6 @@
 
         // Получаем данные
         $.getJSON("http://localhost:60603/api/values", function (data) {
-            
-         
-            
 
             //Пример построения маршрута
             
