@@ -209,76 +209,58 @@
                     <form>
                       <div class="form-group">
                         <label for="from">Откуда едем: </label>
-                        <input type="text" class="form-control" id="from">
+                        <input type="text" class="form-control" id="departure">
                       </div>
                       <div class="form-group">
                         <label for="to">Куда едем: </label>
-                        <input type="text" class="form-control" id="to">
+                        <input type="text" class="form-control" id="destination">
                       </div>
-                      <button type="submit" class="btn btn-primary">Построить маршрут</button>
                     </form>
-                    <br />
+
 
                 </div>
                     <a data-toggle="collapse" href="#collapseFiltesmap" aria-expanded="false" aria-controls="collapseFiltesmap" class="btn_filter" id="open_filters"></a>
                     <div class="pull-right">
-                        <a href="florence-must-see-grid.html" class="btn_filter" id="grid"></a>
-                        <a href="florence-must-see-list.html" class="btn_filter" id="list"></a>
+                        <button type="submit" onclick="buildRoute()" class="btn btn-primary">Построить маршрут</button>
                     </div>
                     <div id="collapseFiltesmap" class="collapse">
                         <div class="filter_type clearfix">
-                            <h6>Duration</h6>
+                            <h6>Длительность: </h6> 
+                            <br />
                             <div class="range_wp">
                                 <input type="text" id="range" name="range" value="">
                             </div>
                         </div>
+                        
                         <div class="filter_type clearfix">
-                            <h6>Review score</h6>
-                            <ul>
+                            <h6>Тип</h6>
+                            <ul id = "search_categories">
                                 <li>
-                                    <label>Superb: 9+ (77)</label>
-                                    <input type="checkbox" class="js-switch" checked>
+                                    <label>Архитектура</label>
+                                    <input type="checkbox" class="js-switch" id="arch_type" checked>
                                 </li>
                                 <li>
-                                    <label>Very good: 8+ (552)</label>
-                                    <input type="checkbox" class="js-switch">
+                                    <label>Парки</label>
+                                    <input type="checkbox" id="park_type" class="js-switch">
                                 </li>
                                 <li>
-                                    <label>Good: 7+ (909)</label>
-                                    <input type="checkbox" class="js-switch">
+                                    <label>Водоемы</label>
+                                    <input type="checkbox" id="water_type" class="js-switch">
                                 </li>
                                 <li>
-                                    <label>Pleasant: 6+ (1196)</label>
-                                    <input type="checkbox" class="js-switch">
+                                    <label>Объекты искусства</label>
+                                    <input type="checkbox" id="art_type" class="js-switch">
                                 </li>
                                 <li>
-                                    <label>No rating (198)</label>
-                                    <input type="checkbox" class="js-switch">
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="filter_type clearfix">
-                            <h6>Type</h6>
-                            <ul>
-                                <li>
-                                    <label>Historic (77)</label>
-                                    <input type="checkbox" class="js-switch" checked>
-                                </li>
-                                <li>
-                                    <label>Monumets (552)</label>
-                                    <input type="checkbox" class="js-switch">
-                                </li>
-                                <li>
-                                    <label>Interesting (909)</label>
-                                    <input type="checkbox" class="js-switch">
-                                </li>
-                                <li>
-                                    <label>Architectural (1196)</label>
-                                    <input type="checkbox" class="js-switch">
+                                    <label>Горы</label>
+                                    <input type="checkbox" id="mountains_type" class="js-switch">
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    
+                    <br />
+                    <br />
                 </div>
 
 
@@ -697,6 +679,7 @@
     <script src="js/infobox.js"></script>
     <script src="js/ion.rangeSlider.min.js"></script>
     <script src="js/switchery.js"></script>
+    <script src="js/betripscripts.js"></script>
     <script>
         'use strict';
         var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
@@ -718,6 +701,7 @@
             prefix: "Min. ",
             grid: false
         });
+
     </script>
 </body>
 
