@@ -1,10 +1,10 @@
 /*
-Theme Name: TravelGuide 
+Theme Name: TravelGuide
 Theme URI: http://www.ansonika.com/travelguide/
 Author: Ansonika
 Author URI: http://themeforest.net/user/Ansonika/
 
-[Table of contents] 
+[Table of contents]
 
 1. SITE STRUCTURE and TYPOGRAPHY
 - 1.1 Typography
@@ -93,7 +93,7 @@ a.button, .button{
 	font-size:14px;
 	outline:none;
 	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease; 
+	transition: all 0.3s ease;
   }
 a.button.small, .button.small{
 	padding:7px 15px;
@@ -140,7 +140,7 @@ a.button_plan{
 	font-size:14px;
 	outline:none;
 	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease; 
+	transition: all 0.3s ease;
   }
   a.button_plan:hover{
 	color:#fff;
@@ -214,25 +214,26 @@ header.sticky, header#plain{
 	background:#222;
 }
 /* logo home with h1 */
-#logo_home h1{
+#logo_home {
 	margin:0;
 	padding:0;
 }
-#logo_home h1 a{
-	width:170px;
+#logo_home  a{
+	background-size: contain!important;
+	/*width:170px;*/
 	height:30px;
 	display:block;
 	background-image:url(../img/logo.png);
 	background-repeat:no-repeat;
 	background-position:left top;
 	background-size: 170px 30px;
-	text-indent:-9999px;
+	/*text-indent:-9999px;*/
 }
 @media only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
-#logo_home h1 a{
+#logo_home  a{
     background-image: url(../img/logo_2x.png);
 	background-size: 170px 30px;
 }
@@ -362,7 +363,7 @@ footer .styled-select {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-} 
+}
 .styled-select select::-ms-expand {display: none;}
 .styled-select select:focus { outline:none;}
 
@@ -515,7 +516,7 @@ footer .styled-select {
 	color:#222;
 }
 .features #feat_1, .features #feat_2, .features #feat_3{
-	padding:110px 30px 5px 30px;
+	padding:40px 30px 5px 30px;
 	text-align:center;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -527,24 +528,25 @@ footer .styled-select {
 .features #feat_1 h3, .features #feat_2 h3, .features #feat_3 h3{
 	color:#ed145b;
 	font-weight:300;
+	margin-top: 0px!important;
 }
 .features #feat_1{
-	background: rgba(0, 0, 0, 0.5) url(../img/icon_mobile.svg) no-repeat center 30px;
+	background: rgba(0, 0, 0, 0.5);
 }
 .features #feat_2{
-	background: rgba(0, 0, 0, 0.5) url(../img/icon_map.svg) no-repeat center 30px;
+	background: rgba(0, 0, 0, 0.5);
 }
 .features #feat_3{
-	background: rgba(0, 0, 0, 0.5) url(../img/icon_read.svg) no-repeat center 30px;
+	background: rgba(0, 0, 0, 0.5);
 }
 .parallax_window_home.bright .features #feat_1{
-	background: rgba(255, 255, 255, 0.8) url(../img/icon_mobile_2.svg) no-repeat center 30px;
+	background: rgba(255, 255, 255, 0.8);
 }
 .parallax_window_home.bright .features #feat_2{
-	background: rgba(255, 255, 255, 0.8) url(../img/icon_map_2.svg) no-repeat center 30px;
+	background: rgba(255, 255, 255, 0.8);
 }
 .parallax_window_home.bright .features #feat_3{
-	background: rgba(255, 255, 255, 0.8) url(../img/icon_read_2.svg) no-repeat center 30px;
+	background: rgba(255, 255, 255, 0.8);
 }
 a.bt_info{
 	width:20px;
@@ -608,7 +610,7 @@ video {
 }
 .teaser-video {
   width: 100%;
-  height: auto; 
+  height: auto;
 }
 .header-video--media {
   width: 100%;
@@ -636,9 +638,9 @@ video {
 	min-height:inherit;
 }
 .box_cat a:hover{
-	transform: translate(0, -10px); 
-	 -webkit-transform: translate(0, -10px); 
-	 -ms-transform: translate(0, -10px); 
+	transform: translate(0, -10px);
+	 -webkit-transform: translate(0, -10px);
+	 -ms-transform: translate(0, -10px);
 }
 .box_cat.small a:hover{
 	transform: none;
@@ -696,7 +698,7 @@ video {
 	color:#fff;
 	margin-top:0;
 	padding-top:0;
-} 
+}
 #subscribe_plan h3 span{
 	display:block;
 	font-size:32px;
@@ -1244,11 +1246,11 @@ a#filters_col_bt:before{
 	padding-bottom: 15px;
 }
 .tools_i{
-	position:absolute; 
+	position:absolute;
 	z-index:99;
 	top:0;
-	right:0; 
-	padding:25px; 
+	right:0;
+	padding:25px;
 	width:80px;
 }
 
@@ -1623,7 +1625,7 @@ ul.cbp_tmtimeline {
 	padding: 0;
 	list-style: none;
 	position: relative;
-} 
+}
 .cbp_tmtimeline:before {
 	content: '';
 	position: absolute;
@@ -1677,7 +1679,7 @@ img.thumb_visit {
 	margin-bottom:0;
 	font-size:13px;
 }
-.cbp_tmtimeline > li .cbp_tmlabel h4 { 
+.cbp_tmtimeline > li .cbp_tmlabel h4 {
 	margin:0 0 5px 0;
 	padding:0;
 	font-size:16px;
@@ -1751,7 +1753,7 @@ img.thumb_visit {
 		float: right;
 		left: auto;
 		margin: -65px 5px 0 0px;
-	}	
+	}
 }
 
 /* Menu */
@@ -2033,18 +2035,18 @@ body#login header.sticky{
 	padding:0;
 }
 .input-icon{
-	position:absolute; 
-	right:10px; 
-	top:10px; 
-	width:32px; 
-	height:24px; 
-	background-color:#fff; 
-	text-align:right; 
-	color:#ccc; 
-	font-size:18px; 
-	line-height:1; 
+	position:absolute;
+	right:10px;
+	top:10px;
+	width:32px;
+	height:24px;
+	background-color:#fff;
+	text-align:right;
+	color:#ccc;
+	font-size:18px;
+	line-height:1;
 	text-shadow:none;
-} 
+}
 #pass-info{
 	width: 100%;
 	margin-bottom:15px;
@@ -2230,7 +2232,7 @@ ul.contacts_info li{
 	margin-top:0;
 	padding-top:0;
 	text-align: center;
-} 
+}
 #subscribe_plan h2 span{
 	font-size:32px;
 	font-weight:300;
@@ -2304,7 +2306,7 @@ ul.contacts_info li{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-} 
+}
 .styled-select-2 select::-ms-expand {display: none;}
 .styled-select-2 select:focus { outline:none;}
 .payment_select{
@@ -2634,10 +2636,10 @@ ul.list_ok li:before {
 }
 /*-------- 4.8 Tabs --------*/
 .tab-content{
-	padding:30px; 
-	background-color:#fff; 
-	border:1px solid #ddd; 
-	border-top:none; 
+	padding:30px;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-top:none;
 	margin-bottom:25px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
@@ -2735,9 +2737,9 @@ ul.list_style_1 li:before{
 input.qty { width:80px;border-left:0; border-right:0; padding-left:52px  }
 input.qtyminus, input.qtyplus, input.qtyplus:focus {position:absolute; width:35px; height:40px; 	border: 1px solid #ddd;  outline:none; cursor:pointer;-webkit-box-shadow: none;box-shadow: none;-webkit-transition: none; z-index:9 }
 input.qtyplus {
-	background:#fff url(../img/plus.png) no-repeat center center; 
-	right:0; top:0; 
-	text-indent:-9999px;  
+	background:#fff url(../img/plus.png) no-repeat center center;
+	right:0; top:0;
+	text-indent:-9999px;
 	-webkit-border-top-right-radius: 4px;
      -webkit-border-bottom-right-radius: 4px;
 	-moz-border-radius-topright: 4px;
@@ -2755,7 +2757,7 @@ input.qtyminus {
 	-moz-border-radius-bottomleft: 4px;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
-	left:0; top:0; 
+	left:0; top:0;
 	border-right: 1px solid #ddd;
 }
 
@@ -2924,7 +2926,7 @@ input.qtyminus {
   z-index: 1;
   height: 100%;
   width: 100%; }
-  /* 
+  /*
  * 	Default theme - Owl Carousel CSS File
  */
 .owl-theme .owl-nav {
@@ -2991,7 +2993,7 @@ position:absolute; right:2%;width:50px; height:50px;}
 
 /* Medium Screens */
 @media (min-width: 992px) and (max-width: 1199px) {
-	#filter_tools ul li a{padding:8px;font-size:10px;}	
+	#filter_tools ul li a{padding:8px;font-size:10px;}
 }
 @media (min-width: 769px) and (max-width: 1199px) {
 	.strip_list .desc{padding:15px 20px 0 0;}
@@ -3002,7 +3004,7 @@ position:absolute; right:2%;width:50px; height:50px;}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.box_home{min-height: inherit;}
-	
+
 	/* Detail page*/
 	ul#tools_2{text-align:center;}
 	ul#tools_2 li{
@@ -3077,7 +3079,7 @@ position:absolute; right:2%;width:50px; height:50px;}
 		font-size:18px;
 		top:-4px;
 	}
-		
+
 }
 @media (min-width: 769px) and (max-width: 979px) {
 
@@ -3086,7 +3088,7 @@ position:absolute; right:2%;width:50px; height:50px;}
 	.content-left{height: auto;overflow-y:scroll;}
 	.directions_list_map a {display:none;}
 	 #map{width:100%;height:450px;}
-	
+
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -3100,16 +3102,16 @@ position:absolute; right:2%;width:50px; height:50px;}
   .content-left{height: auto;overflow-y:scroll;}
   .directions_list_map a {display:none;}
   #map{width:100%;height:400px;}
-	
+
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-	
+
 	/* Typography */
 	.main_title {margin:0 auto 30px; width:100%; }
 	.main_title h2, .main_title h3, .main_title_left h2, .main_title_left h3 {font-size:26px;}
 	.main_title p, .main_title p, .main_title_left p {font-size:16px;}
-	
+
 	/* Structure */
 	header{padding:10px 0 8px 0;}
 	#logo_home h1 { margin:5px 0 0 0;}
@@ -3117,7 +3119,7 @@ position:absolute; right:2%;width:50px; height:50px;}
 	a#logo img{width:140px; height:auto; margin:5px 0;}
 	footer{padding:15px 0;}
 	#social_footer{float:none;}
-	#social_footer ul{margin:15px 0 0 0;}	
+	#social_footer ul{margin:15px 0 0 0;}
 	.margin_60 {padding-top:30px; padding-bottom:30px;}
 	.margin_60_30,.margin_60_45 {padding-top:30px; padding-bottom:0;}
 	.bg_white .margin_60_30 {padding-top:30px; padding-bottom:20px;}
@@ -3132,11 +3134,11 @@ position:absolute; right:2%;width:50px; height:50px;}
 	}
 	#custom-search-input input.btn_search{right:10px;top:10px;}
 	.shadow {display:none;}
-	
+
 	#hero_video #sub_content_in h1 {font-size:26px;}
 	#hero_video #sub_content_in p {font-size:16px;}
 	.parallax_window_home {padding:30px 0;}
-	
+
 	/* Map */
 	#map_home {height:375px;}
 
@@ -3155,7 +3157,7 @@ position:absolute; right:2%;width:50px; height:50px;}
 	.strip_list .desc{padding:10px 25px 0 25px;}
 
 	#sub_content_in{padding:45px 30px 0 30px;}
-	
+
 	/* About */
 	.promo_full_wp div h3{font-size:28px;}
 	.promo_full_wp div h3 span{font-size:16px;}
@@ -3165,63 +3167,63 @@ position:absolute; right:2%;width:50px; height:50px;}
 	.pic h4{position:static;}
 	.pic figure{margin:auto;}
 	.comment{border-left:none;padding-left:0;padding-top:30px;}
-	
+
 	/* Tabs */
 	.tabs nav ul,.tabs nav ul li a {font-size:14px;}
-	
+
 	/* Audio guides page */
 	.box_audio {padding-left:0;}
 	.box_audio:before{content: "";}
 	a.download {float:none;margin-top:15px;}
-	
+
 	/* Transportpage */
 	.box_transport {padding-left:0;}
 	.box_transport i{position:static; margin-left:-10px}
-	
+
 	/* Detail page */
 	ul.menu_list li{padding:0 0 25px 95px;}
 	ul.menu_list li h3{font-size:15px;}
 	ul.menu_list li .thumb{width:80px;height:80px;}
 	ul.menu_list li .thumb img{width:68px;}
-	
+
 	/* Login/Register */
 	.box_login{min-height: inherit;}
 	a.button_login, .button_login{ position:static;}
-	
+
 	/* Contacts */
 	.indent_title_in{padding:0;margin-bottom:20px;}
 	.indent_title_in i{ display:none;}
 	.wrapper_indent{padding-left:0;}
-	
+
 	/*Subscribe plan page*/
-	#subscribe_plan h2{text-align: left;} 
+	#subscribe_plan h2{text-align: left;}
 	#subscribe_plan h2 span{display:block;}
 	.subscribe_page#subscribe_plan ul li{display:block;width:auto;margin-right:0;}
 
 }
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+
 	/* Home */
 	#search_bar{position:static; background:rgba(237,20,91,1);}
 	.pattern_dots_gray.fix_mobile, .pattern_dots.fix_mobile, .fix_mobile{margin-top:60px;}
 	h3.slide_typo, .slide_typo_2 {display:none;}
-	
+
 	#sub_content_in{padding:45px 20px 0 20px;}
 	#sub_content_in h1{font-size:26px;}
 	#sub_content_in p{font-size:16px;}
-	
+
 	#hero_video #sub_content_in h1 {font-size:16px;}
 	#hero_video #sub_content_in p {font-size:12px;}
-	
+
 	/* Detail page */
 	.box_info a.button.small{position:static; margin-top:15px;}
-	
+
 	/* Subscribe plan page */
 	.form_title{padding-left:0;}
 	.form_title h3 strong{ display:none;}
 	.step{padding:20px 0 20px 0;margin:0 0 10px 0;}
-	
+
 	 #map{width:100%;height:320px;}
-	
+
 }
